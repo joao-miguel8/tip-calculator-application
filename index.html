@@ -7,24 +7,63 @@
 
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-        <title>Frontend Mentor | Tip calculator app</title>
+        <link rel="stylesheet" href="../tip-calculator-application/css/reset.css" />
 
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
+        <link rel="stylesheet" href="../tip-calculator-application/css/style.css" />
+
+        <script src="../tip-calculator-application/js/main.js" defer></script>
+
+        <title>Frontend Mentor | Tip calculator app</title>
     </head>
     <body>
-        Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / person Total / person Reset
+        <header><h1>splitter</h1></header>
+        <main>
+            <!-- container 1 -->
+            <!-- container for bill total -->
+            <section class="bill-cost-container">
+                <label for="">Bill</label>
+                <input type="text" />
+            </section>
 
-        <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
-        <h3>HELLO A NEW CHANGE</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi dolores vel beatae animi non vitae inventore eaque dignissimos perferendis.</p>
+            <!-- container 2 -->
+            <!-- container for tip percent amounts -->
+            <section class="tip-percent-amount-container">
+                <h4>Select Tip %</h4>
+                <!-- tip amount choices  -->
+                <div class="button-percents-container">
+                    <button class="five-percent bttn-style">5%</button>
+                    <button class="ten-percent bttn-style">10%</button>
+                    <button class="fifteen-percent bttn-style">15%</button>
+                    <button class="twentyfive-percent bttn-style">25%</button>
+                    <button class="fifty-percent bttn-style">50%</button>
+                    <input type="number" placeholder="Custom" />
+                </div>
+            </section>
+
+            <!-- container for amount of people -->
+            <section class="number-of-people-container">
+                <h5>Number of People</h5>
+                <input type="number" />
+            </section>
+
+            <!-- container 3 -->
+            <section class="tip-amounts-container">
+                <!-- tip amount container -->
+                <div class="tip-amount-per-person-container">
+                    <h5>Tip Amount</h5>
+                    <span>/ person</span>
+                    <span>$4.27</span>
+                </div>
+                <!-- tip total amount container -->
+                <div class="tip-total-amount-container">
+                    <h5>Total</h5>
+                    <span>/ person</span>
+                    <span>$32.79</span>
+                    <button class="reset">Reset</button>
+                </div>
+            </section>
+
+            <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div> -->
+        </main>
     </body>
 </html>

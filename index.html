@@ -3,30 +3,33 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
 
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
+        <!-- FONT: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+        <!-- CSS -->
         <link rel="stylesheet" href="../tip-calculator-application/css/reset.css" />
-
         <link rel="stylesheet" href="../tip-calculator-application/css/style.css" />
-
+        <!-- JS -->
         <script src="../tip-calculator-application/js/main.js" defer></script>
 
-        <title>Frontend Mentor | Tip calculator app</title>
+        <title>Tip Calculator App</title>
     </head>
     <body>
         <header><h1>splitter</h1></header>
-        <main>
+        <section class="main-wrapper">
             <!-- container 1 -->
             <!-- container for bill total -->
             <section class="bill-cost-container">
                 <label for="">Bill</label>
-                <input type="text" />
+                <input class="bill-input" type="number" />
             </section>
 
-            <!-- container 2 -->
             <!-- container for tip percent amounts -->
+            <!-- container 2 -->
             <section class="tip-percent-amount-container">
                 <h4>Select Tip %</h4>
                 <!-- tip amount choices  -->
@@ -43,26 +46,32 @@
             <!-- container for amount of people -->
             <section class="number-of-people-container">
                 <h5>Number of People</h5>
-                <input type="number" />
+                <input class="amount-input" type="number" placeholder="0" />
             </section>
 
             <!-- container 3 -->
             <section class="tip-amounts-container">
                 <!-- tip amount container -->
                 <div class="tip-amount-per-person-container">
-                    <h5>Tip Amount</h5>
-                    <span>/ person</span>
+                    <div class="tip-category-content">
+                        <h5>Tip Amount</h5>
+                        <span>/ person</span>
+                    </div>
                     <span>$4.27</span>
                 </div>
+
                 <!-- tip total amount container -->
                 <div class="tip-total-amount-container">
-                    <h5>Total</h5>
-                    <span>/ person</span>
+                    <div class="tip-category-content">
+                        <h5>Total</h5>
+                        <span>/ person</span>
+                    </div>
                     <span>$32.79</span>
-                    <button class="reset">Reset</button>
                 </div>
+                <button class="reset">Reset</button>
             </section>
-
+        </section>
+        <main>
             <!-- <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div> -->
         </main>
     </body>

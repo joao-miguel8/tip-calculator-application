@@ -1,0 +1,119 @@
+root {
+    /* PRIMARIES */
+    --primary01: #26c0ab;
+    /* NEUTRALS */
+    --neutral01: #00494d;
+    --neutral02: #5e7a7d;
+    --neutral03: #7f9c9f;
+    --neutral04: #c5e4e7;
+    --neutral05: #f4fafa;
+    --neutral06: #ffffff;
+
+    --ff: "Space Mono", monospace;
+    --border-rad: 5px;
+}
+/* - Font size (form inputs): 24px */
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* MULTI STYLE */
+/* >>>>>>>>>>>>>> MULTI STYLE  <<<<<<<<<<<<< */
+.reset,
+.button-percents-container buttons,
+.button-percents-container input,
+.amount-input,
+.bill-input {
+    border-radius: 5px;
+    border-style: none;
+    border: 0.8px solid gray;
+}
+
+/* >>>>>>>>>>>>>>LAYOUT  <<<<<<<<<<<<< */
+
+.main-wrapper {
+    max-width: 370px;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* ------------------- */
+.bill-cost-container {
+    border: 1px solid salmon;
+    display: flex;
+    flex-direction: column;
+}
+
+.bill-input {
+    padding: 10px;
+}
+
+/* ------------------- */
+.tip-percent-amount-container {
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-percents-container {
+    border: 1px solid rgb(28, 0, 128);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* max-width: 180px; */
+}
+.button-percents-container button,
+.button-percents-container input {
+    padding: 14px 30px;
+    flex: 1;
+    /* flex-basis: 33%; */
+    border-radius: 5px;
+}
+/* ---------------------------- */
+.number-of-people-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.number-of-people-container input {
+    padding: 10px;
+}
+/* ------------------------ */
+
+.tip-amounts-container {
+    background: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-amount-per-person-container,
+.tip-total-amount-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-amount-per-person-container {
+    border: 1px solid rgb(0, 36, 128);
+}
+
+.tip-total-amount-container {
+    border: 1px solid green;
+}
+
+.tip-category-content {
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+
+.reset {
+    justify-self: stretch;
+    padding: 14px;
+}
+
+/* >>>>>>>>>>>>>>GENERAL STYLING <<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>ADDITIONAL STYLING <<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>@MEDIA QUERIES  <<<<<<<<<<<<< */

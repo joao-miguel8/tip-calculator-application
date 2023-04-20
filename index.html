@@ -27,7 +27,7 @@
             <!-- container for bill total -->
             <section class="bill-cost-container">
                 <label for="">Bill</label>
-                <input class="bill-input" type="number" />
+                <input required class="bill-input" type="number" />
             </section>
 
             <!-- container for tip percent amounts -->
@@ -36,11 +36,11 @@
                 <label>Select Tip %</label>
                 <!-- tip amount choices  -->
                 <div class="button-percents-container">
-                    <button class="five-percent bttn-style">5%</button>
-                    <button class="ten-percent bttn-style">10%</button>
-                    <button class="fifteen-percent bttn-style">15%</button>
-                    <button class="twentyfive-percent bttn-style">25%</button>
-                    <button class="fifty-percent bttn-style">50%</button>
+                    <button value="5" class="five-percent bttn-style percent">5%</button>
+                    <button value="10" class="ten-percent bttn-style percent">10%</button>
+                    <button value="15" class="fifteen-percent bttn-style percent">15%</button>
+                    <button value="25" class="twentyfive-percent bttn-style percent">25%</button>
+                    <button value="50" class="fifty-percent bttn-style percent">50%</button>
                     <input class="custom-tip" type="number" placeholder="Custom" />
                 </div>
             </section>
@@ -48,7 +48,7 @@
             <!-- container for amount of people -->
             <section class="number-of-people-container">
                 <label>Number of People</label>
-                <input class="amount-input" type="number" placeholder="0" />
+                <input class="people-amount-input" type="number" placeholder="0" />
             </section>
 
             <!-- container 3 -->
@@ -59,16 +59,16 @@
                         <h5>Tip Amount</h5>
                         <span>/ person</span>
                     </div>
-                    <span class="tip-per-person">$4.27</span>
+                    <span class="tip-per-person">$00.00</span>
                 </div>
 
                 <!-- tip total amount container -->
                 <div class="tip-total-amount-container">
                     <div class="tip-category-content">
-                        <h5>Total</h5>
+                        <h5>Total After Tip</h5>
                         <span>/ person</span>
                     </div>
-                    <span class="tip-total">$32.79</span>
+                    <span class="tip-total">$00.00</span>
                 </div>
                 <button class="reset">Reset</button>
             </section>

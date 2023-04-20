@@ -22,14 +22,14 @@
 
 .reset,
 .button-percents-container buttons,
-.amount-input,
+.people-amount-input,
 .bill-input {
     border-radius: 5px;
     border-style: none;
 }
 
 /* BUTTON STYLING: */
-.button-percents-container button {
+.bttn-style {
     background: var(--neutral01);
     color: var(--neutral06);
     font-weight: bold;
@@ -47,7 +47,7 @@
 
 /* INPUT STYLING: */
 .bill-input,
-.amount-input,
+.people-amount-input,
 .custom-tip {
     background: var(--neutral05);
     border: 0.5px solid gray;
@@ -199,7 +199,6 @@ TIP CONTAINER */
 .reset:hover {
     background: var(--neutral04);
 }
-
 .button-percents-container button:hover {
     background: var(--primary01);
 }

@@ -1,4 +1,4 @@
-root {
+:root {
     /* PRIMARIES */
     --primary01: #26c0ab;
     /* NEUTRALS */
@@ -19,28 +19,83 @@ root {
 
 /* MULTI STYLE */
 /* >>>>>>>>>>>>>> MULTI STYLE  <<<<<<<<<<<<< */
+
 .reset,
 .button-percents-container buttons,
-.button-percents-container input,
 .amount-input,
 .bill-input {
     border-radius: 5px;
     border-style: none;
-    border: 0.8px solid gray;
+}
+
+/* BUTTON STYLING: */
+.button-percents-container button {
+    background: var(--neutral01);
+    color: var(--neutral06);
+    font-weight: bold;
+    font-family: var(--ff);
+    font-size: 1rem;
+}
+
+/* LABEL STYLING */
+.bill-cost-container label,
+.tip-percent-amount-container label,
+.number-of-people-container label {
+    color: var(--neutral02);
+    font-size: 0.9rem;
+}
+
+/* INPUT STYLING: */
+.bill-input,
+.amount-input,
+.custom-tip {
+    background: var(--neutral05);
+    border: 0.5px solid gray;
+    outline: none;
+}
+
+/* >>>>>>>>>>>>>>GENERAL STYLING <<<<<<<<<<<<< */
+
+body {
+    font-family: var(--ff);
+}
+
+header {
+    background: var(--neutral04);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title-container {
+    /* border: 1px solid green; */
+    display: flex;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--neutral02);
 }
 
 /* >>>>>>>>>>>>>>LAYOUT  <<<<<<<<<<<<< */
 
 .main-wrapper {
-    max-width: 370px;
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border-radius: 30px;
+    padding: 20px;
+    /* border: 1px solid red; */
 }
+
 /* ------------------- */
+/* CONTAINER 1
+BILL INPUT CONTAINER  */
+
 .bill-cost-container {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     display: flex;
     flex-direction: column;
 }
@@ -50,42 +105,53 @@ root {
 }
 
 /* ------------------- */
+/* CONTAINER 2 
+TIP CONTAINER */
+
 .tip-percent-amount-container {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex-direction: column;
 }
 
 .button-percents-container {
-    border: 1px solid rgb(28, 0, 128);
+    /* border: 1px solid rgb(28, 0, 128); */
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     /* max-width: 180px; */
 }
 .button-percents-container button,
 .button-percents-container input {
     padding: 14px 30px;
     flex: 1;
-    /* flex-basis: 33%; */
     border-radius: 5px;
 }
+
 /* ---------------------------- */
+/* CONTAINER 3  */
+/* INPUT PEOPLE AMOUNT */
+
 .number-of-people-container {
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
 }
 
 .number-of-people-container input {
-    padding: 10px;
+    padding: 14px;
 }
 /* ------------------------ */
 
+/* CONTAINER 4  */
+/* TIP PAYMENT CONTAINER  */
+
 .tip-amounts-container {
-    background: orange;
+    background: var(--neutral01);
     display: flex;
     flex-direction: column;
+    padding: 24px;
+    gap: 30px;
 }
 
 .tip-amount-per-person-container,
@@ -95,25 +161,47 @@ root {
 }
 
 .tip-amount-per-person-container {
-    border: 1px solid rgb(0, 36, 128);
+    /* border: 1px solid rgb(0, 36, 128); */
 }
 
 .tip-total-amount-container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .tip-category-content {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
+    color: var(--neutral05);
     display: flex;
     flex-direction: column;
+}
+
+.tip-per-person,
+.tip-total {
+    color: var(--primary01);
+    font-size: 1.8rem;
+}
+
+.tip-total {
+}
+
+.tip-per-person {
 }
 
 .reset {
     justify-self: stretch;
     padding: 14px;
+    background: var(--primary01);
 }
 
-/* >>>>>>>>>>>>>>GENERAL STYLING <<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>ADDITIONAL STYLING  <<<<<<<<<<<<< */
 
-/* >>>>>>>>>>>>>>ADDITIONAL STYLING <<<<<<<<<<<<< */
+/* ---------BUTTON HOVERS: */
+.reset:hover {
+    background: var(--neutral04);
+}
+
+.button-percents-container button:hover {
+    background: var(--primary01);
+}
+
 /* >>>>>>>>>>>>>>@MEDIA QUERIES  <<<<<<<<<<<<< */

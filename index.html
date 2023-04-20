@@ -19,7 +19,9 @@
         <title>Tip Calculator App</title>
     </head>
     <body>
-        <header><h1>splitter</h1></header>
+        <header>
+            <div class="main-title-container"><h1>splitter</h1></div>
+        </header>
         <section class="main-wrapper">
             <!-- container 1 -->
             <!-- container for bill total -->
@@ -31,7 +33,7 @@
             <!-- container for tip percent amounts -->
             <!-- container 2 -->
             <section class="tip-percent-amount-container">
-                <h4>Select Tip %</h4>
+                <label>Select Tip %</label>
                 <!-- tip amount choices  -->
                 <div class="button-percents-container">
                     <button class="five-percent bttn-style">5%</button>
@@ -39,13 +41,13 @@
                     <button class="fifteen-percent bttn-style">15%</button>
                     <button class="twentyfive-percent bttn-style">25%</button>
                     <button class="fifty-percent bttn-style">50%</button>
-                    <input type="number" placeholder="Custom" />
+                    <input class="custom-tip" type="number" placeholder="Custom" />
                 </div>
             </section>
 
             <!-- container for amount of people -->
             <section class="number-of-people-container">
-                <h5>Number of People</h5>
+                <label>Number of People</label>
                 <input class="amount-input" type="number" placeholder="0" />
             </section>
 
@@ -57,7 +59,7 @@
                         <h5>Tip Amount</h5>
                         <span>/ person</span>
                     </div>
-                    <span>$4.27</span>
+                    <span class="tip-per-person">$4.27</span>
                 </div>
 
                 <!-- tip total amount container -->
@@ -66,7 +68,7 @@
                         <h5>Total</h5>
                         <span>/ person</span>
                     </div>
-                    <span>$32.79</span>
+                    <span class="tip-total">$32.79</span>
                 </div>
                 <button class="reset">Reset</button>
             </section>

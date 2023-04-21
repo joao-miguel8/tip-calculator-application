@@ -1,28 +1,21 @@
-// get bill input
-
-// calculate bill and selected tip percentage
-
-// split the total amount after tip by amount of people selected
-
 // Inputs:
 let billPayment = document.querySelector(".bill-input");
 let numberOfPeople = document.querySelector(".people-amount-input");
 let customTipInput = document.querySelector(".custom-tip");
 // Button Tips:
-let fivePercentTip = document.querySelector(".five-percent");
-let tenPercentTip = document.querySelector(".ten-percent");
-let twentyFivePercentTip = document.querySelector(".twentyfive-percent");
-let fiftyPercentTip = document.querySelector(".fifty-percent");
 let percentButtons = document.querySelectorAll(".percent");
+
 const tipTotal = document.querySelector(".tip-total");
 const tipPerPerson = document.querySelector(".tip-per-person");
-
+const resetButton = document.querySelector(".reset");
 let tip;
 
+// adding an event listener to all percent buttons
 percentButtons.forEach((btn) => {
     btn.addEventListener("click", TipAmount);
 });
 
+// calculating the tip
 function calculateTip(val) {
     return +billPayment.value * (val / 100);
 }
@@ -52,3 +45,12 @@ function calcPerPerson(e) {
 }
 
 //reset values function
+
+resetButton.addEventListener("click", resetValues);
+
+function resetValues() {
+    billPayment.value = "";
+    numberOfPeople.value = "";
+    tipPerPerson.innerText = +0;
+    tipTotal.innerText = +0;
+}
